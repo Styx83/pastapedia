@@ -1,0 +1,202 @@
+/* === Base === */
+body {
+    background-color: #fff1d7;
+    background-image: url("pictures/background11.svg");
+    text-align: center;
+    color: #ffffff; /*#4f2b0f*/
+    font-family: "Lexend";
+}
+
+h1 {
+    font-family: "Meow Script";
+    font-size: 3vw;
+}
+
+a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd15d;
+}
+
+/* === Logo === */
+#logo {
+    width: 35vw;
+    height: auto;
+    animation: small_logo 0.5s 1;
+}
+
+#logo:hover {
+    animation: big_logo 0.5s 1;
+    width: 40%;
+}
+
+@keyframes big_logo {
+    from { width: 35%; }
+    to { width: 40%; }
+}
+
+@keyframes small_logo {
+    from { width: 40%; }
+    to { width: 35%; }
+}
+
+/* === Content Blocks === */
+#content,
+#content-recette {
+    width: 55vw;
+    margin: auto auto 5vw auto;
+    height: fit-content;
+    padding: 2vw;
+    border-radius: 20px;
+    background-color: #834F27; /*#f71905*/
+    box-shadow: 0px 2px 10px #513018;
+    align-items: center;
+    text-align: left;
+}
+
+#content-recette {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px #472a14;
+    padding: 0 2vw;
+}
+
+/* === Recipe Elements === */
+#discover {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.recette-list {
+    width: 20%;
+    background-color: #9C5E2F;
+    box-shadow: 0px 2px 10px #513018;
+    border-radius: 10px;
+    padding: 1.8%;
+    text-align: center;
+    align-items: center;
+}
+
+.recette-list:hover {
+    background-color: #ae6c3b;
+}
+
+.recette-list a {
+    text-decoration: none;
+}
+
+.illu {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#recette-ingredients,
+#recette-preparation {
+    width: 95%;
+    background-color: #9C5E2F;
+    box-shadow: 0px 2px 10px #472a14;
+    border-radius: 10px;
+    padding: 1vw;
+}
+
+#recette-ingredients {
+    margin: auto auto 1vw auto;
+    text-align: center;
+}
+
+#recette-preparation {
+    text-align: left;
+}
+
+.clue {
+    text-align: left;
+}
+
+.return {
+    margin: 1vw 0;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+/* === Footer === */
+#footer {
+    margin: 4% 0 2% 0;
+    text-align: right;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 1100px) {
+    body {
+        font-size: 3vw;
+    }
+
+    #logo {
+        width: 50vw;
+    }
+
+    #logo:hover {
+        width: 55vw;
+    }
+
+    @keyframes big_logo {
+        from { width: 50vw; }
+        to { width: 55vw; }
+    }
+
+    @keyframes small_logo {
+        from { width: 55vw; }
+        to { width: 50vw; }
+    }
+
+    #content,
+    #content-recette {
+        width: 80vw;
+        border-radius: 15px;
+        margin: auto auto 10vw auto;
+    }
+
+    #content {
+        padding: 3vw;
+    }
+
+    #content-recette {
+        padding: 0 2vw;
+        gap: 2vw;
+    }
+
+    #discover {
+        gap: 2vw;
+    }
+
+    .recette-list {
+        width: 25%;
+    }
+
+    #recette-ingredients,
+    #recette-preparation {
+        width: 90%;
+        padding: 1.5vw;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .return {
+        font-size: 3vw;
+        margin: 1vw 0 2vw 0;
+    }
+}
