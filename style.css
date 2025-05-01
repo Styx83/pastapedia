@@ -112,7 +112,9 @@ a:hover {
     margin: auto auto 1vw auto;
     text-align: center;
 }
-
+.liste_ingredients{
+    text-align: left
+}
 #recette-preparation {
     text-align: left;
 }
